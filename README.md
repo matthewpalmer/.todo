@@ -18,13 +18,5 @@ Just create a file called `filename.todo`, format it properly and you have the m
 - [x] completed
 ```
 
-__becomes__
-
-- [ ] a task list item
-- [ ] list _syntax_ required
-- [ ] normal **formatting**
-- [ ] incomplete
-- [x] completed
-
 #Compatible Apps
 None. I'm working on it.
