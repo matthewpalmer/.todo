@@ -10,6 +10,16 @@ Just create a file called `filename.todo`, format it properly and you have the m
 ##Syntax
 .todo files are formatted a lot like Task Lists in Github Flavoured Markdown. This can probably change when I think about it more.
 
+```.todo
+- [ ] a task list item
+- [ ] list _syntax_ required
+- [ ] normal **formatting**
+- [ ] incomplete
+- [x] completed
+```
+
+__becomes__
+
 - [ ] a task list item
 - [ ] list _syntax_ required
 - [ ] normal **formatting**
