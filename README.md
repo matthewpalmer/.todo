@@ -7,14 +7,44 @@ Todo lists should not be locked in to a single platform or service; todo lists s
 #How
 Just create a file called `filename.todo`, format it properly and you have the most basic .todo file. Set your default apps or text editor for editing this file, and off you go. Download apps compatible with .todo files for desktop and smartphone if any are ever made.
 
-##Syntax
+#Syntax
 .todo files are formatted a lot like Task Lists in Github Flavoured Markdown.
 
 ```.todo
 - [] a task list item
 - [] list _syntax_ required
 - [] normal **formatting**
+-[x]more relaxed about syntax than GFM
+- [x]so inconsistencies should be ok
 - [] incomplete
 - [x] completed
 ```
 
+What's important is that the first characters in each line are `-` (list), then an optional space ` `, then `[`, then optionally `x`, then `]`, then the actual todo content.
+
+```regex
+
+```
+
+# Conversion
+It's also good to be able to convert a set of todos to a .json object
+
+```.todo
+- [] todo item one
+- [x] completed item
+```
+
+=>
+
+```json
+[
+  {
+    "task": "todo item one",
+    "completed": false
+  },
+  {
+    "task": "completed item",
+    "completed": true
+  }
+]
+```
