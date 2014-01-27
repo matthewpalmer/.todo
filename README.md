@@ -22,8 +22,17 @@ Just create a file called `filename.todo`, format it properly and you have the m
 
 What's important is that the first characters in each line are `-` (list), then an optional space ` `, then `[`, then optionally `x`, then `]`, then the actual todo content.
 
-```regex
+## Regex
+I'm terrible at Regular Expressions (so please submit a pull request), but this is one way of handling the parsing.
 
+```regex
+^-(\s|)\[(x|)\](\s|).*$
+```
+
+in JavaScript
+
+```regex
+/^-(\s|)\[(x|)\](\s|).*$/gi
 ```
 
 # Conversion
