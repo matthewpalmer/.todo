@@ -35,6 +35,19 @@ in JavaScript
 /^-(\s|)\[(x|)\](\s|).*$/gi
 ```
 
+A test case, with this regex
+
+```
+- [x] completed           #true
+-[] not completed         #true
+-[x] another completed    #true
+- [] incomplete           #true
+- invalid result          #false
+not even existing         #false
+-[x]condensed             #true
+-[]ultra                  #true
+```
+
 # Conversion
 It's also good to be able to convert a set of todos to a .json object
 
