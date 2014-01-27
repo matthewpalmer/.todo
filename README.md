@@ -72,4 +72,4 @@ It's also good to be able to convert a set of todos to a .json object
 ```
 
 # Example/Todo
-See [todo.todo] for both an example of a .todo file and a list of things that need to be done for this repository.
+See [todo.todo](todo.todo) for both an example of a .todo file and a list of things that need to be done for this repository.
