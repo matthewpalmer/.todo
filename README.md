@@ -23,16 +23,15 @@ Just create a file called `filename.todo`, format it properly and you have a .to
 What's important is that the first characters in each line are `-` (list), then an optional space ` `, then `[`, then optionally `x`, then `]`, then the actual todo content.
 
 ## Regex
-I'm terrible at Regular Expressions (so please submit a pull request), but this is one way of handling the parsing.
 
 ```regex
-^-(\s|)\[(x|)\](\s|).*$
+^\s*-\s*\[x?\].*$
 ```
 
-in JavaScript
+with JavaScript flags,
 
 ```regex
-/^-(\s|)\[(x|)\](\s|).*$/gi
+/^\s*-\s*\[x?\].*$/gim
 ```
 
 A test case, with this regex
